@@ -1,0 +1,78 @@
+body {
+    background-color: rgb(194, 214, 214) !important;
+}
+
+/* Header */
+h2 {
+    text-align: center;
+    font-weight: bold !important;
+}
+
+h3 {
+    text-align: center;
+}
+
+/* Square */
+
+#scores h3 {
+    text-align: center;
+}
+
+table:not(#highscores) {
+    width: 100% !important;
+}
+
+
+table:not(#highscores) td {
+    border-color: white !important;
+    border-width: 2px !important;
+    position: relative !important;
+}
+
+table:not(#highscores) td:after{
+    content:'';
+    display:block;
+    margin-top:100%;
+}
+
+.different {
+    background-color: red;
+}
+
+#scores #number {
+    color: red;
+}
+
+/* Menu */
+
+#main h4 {
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+ul li {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+ul li a {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    vertical-align: center !important;
+    font-size: 20px !important;
+}
+
+#highscores {
+    background-color: white;
+}
+
+#highscores thead {
+    font-weight: bold;
+    text-align: center;
+}
