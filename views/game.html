@@ -1,0 +1,16 @@
+<div class="container-fluid" ng-controller="TableController">
+                <div id="scores">
+                    <h3 ng-if="scores >= 0">Scores: <span id="number">{{ scores }}</span></h3>
+                </div>
+            <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+                <table class="table table-responsive table-bordered" >
+                    <tbody>
+                        <tr ng-repeat="row in numbers">
+                            <td ng-repeat="col in numbers" ng-repeat="col in numbers" ng-click="check(row, col)" ng-style="{ 'background-color': colorSquare(row, col) }">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+    <a class="btn btn-warning" href="/color/#/">Back</a>
+        </div> <!-- container-fluid -->
